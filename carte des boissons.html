@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carte des Boissons - Au Bout du Pont</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+background:#111;
+color:white;
+}
+
+/* entête */
+
+.header{
+width:100%;
+height:220px;
+background:url("bdptest.jpg") center/cover;
+display:flex;
+align-items:flex-end;
+}
+
+.header-title{
+background:rgba(0,0,0,0.7);
+width:100%;
+padding:20px;
+text-align:center;
+}
+
+.header-title h1{
+margin:0;
+color:white;
+font-size:26px;
+}
+
+.header-title p{
+margin:5px 0 0 0;
+font-size:14px;
+}
+
+/* navigation */
+
+.nav{
+display:flex;
+overflow-x:auto;
+background:#1a1a1a;
+padding:10px;
+gap:10px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+background:#222;
+padding:8px 14px;
+border-radius:20px;
+white-space:nowrap;
+font-size:13px;
+}
+
+.nav a:hover{
+background:#ff4fa3;
+}
+
+/* contenu */
+
+.container{
+padding:20px;
+}
+
+/* catégories */
+
+.categorie{
+margin-bottom:35px;
+}
+
+.categorie h2{
+color:#C11C84;
+border-bottom:1px solid #333;
+padding-bottom:6px;
+}
+
+.categorie h3{
+color:#ff4fa3;
+border-bottom:1px solid #333;
+padding-bottom:2px;
+}
+
+
+/* boissons */
+
+.boisson{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #222;
+}
+
+.nom{
+font-size:15px;
+}
+
+.prix{
+color:#ff4fa3;
+font-weight:600;
+}
+
+/* sous texte */
+
+.description{
+font-size:12px;
+opacity:0.7;
+margin-top:3px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="header-title">
+<h1>Au Bout du Pont</h1>
+<p>Bar • Restaurant</p>
+</div>
+
+</div>
+
+<div class="nav">
+
+<a href="#aperitifs">Apéritifs</a>
+<a href="#bieres">Bières</a>
+<a href="#whiskies">Whiskies</a>
+<a href="#softs">Softs</a>
+<a href="#chauds">Chauds</a>
+<a href="#digestifs">Digestifs</a>
+<a href="#verre">Vins au verre</a>
+<a href="#pc">Petillant/Champagne</a>
+
+
+</div>
+
+<div class="container">
+
+<div class="categorie" id="aperitifs">
+
+<h2>Apéritifs</h2>
+
+<div class="boisson">
+<span class="nom">Kir 12cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Kir pétillant 12cl</span>
+<span class="prix">4.00€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Kir Royal 12cl 
+(cassis/mûre/pêche/Pamplemousse
+/Framboise/Fraise des bois)</span>
+<span class="prix">6.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Ricard, Pastis, Pacific 2cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Martini blanc / rouge 5cl</span>
+<span class="prix">5.00€</span>
+</div>
+
+</div>
+
+<div class="categorie" id="bieres">
+
+<h2>Bières Pression</h2>
+
+<div class="boisson">
+<span class="nom">Bourg 25cl</span>
+<span class="prix">3.00€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Télhouet 50cl</span>
+<span class="prix">5.00€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Bière du mois 25cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+</div>
+
+<div class="categorie" id="whiskies">
+
+<h2>Whiskies</h2>
+
+<div class="boisson">
+<span class="nom">Clan Campbell</span>
+<span class="prix">4€ / 6€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Aberlour</span>
+<span class="prix">4€ / 8€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Chivas</span>
+<span class="prix">5€ / 8€</span>
+</div>
+
+</div>
+
+<div class="categorie" id="softs">
+
+<h2>Softs</h2>
+
+<div class="boisson">
+<span class="nom">Coca Cola 33cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Coca Cola Zéro 33cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Fuze Tea 25cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Schweppes Agrum 25cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Orangina 25cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Perrier 33cl</span>
+<span class="prix">3.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Jus de fruits 25cl (orange/ananas/abricot/tomate/
+pamplemousse/pomme)</span>
+<span class="prix">3.50€</span>
+</div>
+
+<h3>Eaux</h3>
+
+<div class="boisson">
+<span class="nom">Plancöet Minérale ou Petillante(50cl/1L)</span>
+<span class="prix">3.50€/5€</span>
+</div>
+
+</div>
+
+<div class="categorie" id="chauds">
+
+<h2>Boissons Chaudes</h2>
+
+<div class="boisson">
+<span class="nom">Café</span>
+<span class="prix">2.00€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Allongé</span>
+<span class="prix">2.20€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Café crème</span>
+<span class="prix">2.50€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Thé / infusion</span>
+<span class="prix">2.50€</span>
+</div>
+
+</div>
+
+<div class="categorie" id="digestifs">
+
+<h2>Digestifs</h2>
+
+<div class="boisson">
+<span class="nom">Digestif</span>
+<span class="prix">5.00€</span>
+</div>
+</div>
+
+<div class="categorie" id="verre">
+
+<h2>Vins au verre</h2>
+<h3>Vins Blanc</h3>
+
+<div class="boisson">
+<span class="nom">Chenin "Pierre Bourré"</span>
+<span class="prix">5€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Chardonnay "Récolte Tardive"</span>
+<span class="prix">5.50€</span>
+</div>
+
+<h3>Rosés</h3>
+
+<div class="boisson">
+<span class="nom">Pur Gris "Sumeire"</span>
+<span class="prix">5€</span>
+</div>
+
+<h3>Vins Rouge</h3>
+<div class="boisson">
+<span class="nom">Bourgueil "Domaine des Ouches"</span>
+<span class="prix">6€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Côtes de Blayes "Château Le Grand Fort"</span>
+<span class="prix">6€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">L'Orangeraie</span>
+<span class="prix">5€</span>
+</div>
+
+</div>
+<div class="categorie" id="pc">
+
+<h2>Petillant/Champagne</h2>
+
+<div class="boisson">
+<span class="nom">Petillant "Nicolas François" 75cl</span>
+<span class="prix">20.00€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Champagne "Veuve de Beaumont"75cl</span>
+<span class="prix">40.00€</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
