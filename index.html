@@ -120,6 +120,94 @@ opacity:0.7;
 margin-top:3px;
 }
 
+.top-btn{
+position:fixed;
+bottom:15px;
+right:15px;
+background:white;
+color:#111;
+border:none;
+width:40px;
+height:40px;
+border-radius:50%;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+display:none;
+z-index:1000;
+transition:0.3s;
+}
+
+.top-btn:hover{
+background:#f0f0f0;
+transform:scale(1.1);
+}
+
+/* footer */
+
+/* footer stylé */
+
+.footer{
+position:relative;
+margin-top:50px;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+/* image de fond */
+
+.footer-bg{
+width:100%;
+height:200px;
+object-fit:cover;
+filter:brightness(0.4) contrast(1.2);
+}
+
+/* contenu par dessus */
+
+.footer-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+width:100%;
+padding:20px;
+}
+
+/* titre */
+
+.footer-content h2{
+margin:0;
+font-size:20px;
+letter-spacing:2px;
+}
+
+/* texte */
+
+.footer-content p{
+margin-top:5px;
+font-size:13px;
+opacity:0.8;
+}
+
+/* ligne décorative */
+
+.footer-line{
+width:60px;
+height:3px;
+background:#ff4fa3;
+margin:10px auto;
+border-radius:2px;
+}
+
+.footer-img{
+width:100%;
+max-width:300px;
+margin-top:10px;
+}
+
+
 </style>
 
 </head>
@@ -182,6 +270,17 @@ margin-top:3px;
 <span class="prix">5.00€</span>
 </div>
 
+<div class="boisson">
+<span class="nom">Suze 5cl</span>
+<span class="prix">5.00€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Porto blanc / rouge 5cl</span>
+<span class="prix">5.00€</span>
+</div>
+
+
 </div>
 
 <div class="categorie" id="bieres">
@@ -189,13 +288,13 @@ margin-top:3px;
 <h2>Bières Pression</h2>
 
 <div class="boisson">
-<span class="nom">Bourg 25cl</span>
-<span class="prix">3.00€</span>
+<span class="nom">Loburg 25cl</span>
+<span class="prix">3€</span>
 </div>
 
 <div class="boisson">
-<span class="nom">Télhouet 50cl</span>
-<span class="prix">5.00€</span>
+<span class="nom">Télhouët 50cl</span>
+<span class="prix">3.50€</span>
 </div>
 
 <div class="boisson">
@@ -211,7 +310,7 @@ margin-top:3px;
 
 <div class="boisson">
 <span class="nom">Clan Campbell</span>
-<span class="prix">4€ / 6€</span>
+<span class="prix">3€ / 6€</span>
 </div>
 
 <div class="boisson">
@@ -221,7 +320,7 @@ margin-top:3px;
 
 <div class="boisson">
 <span class="nom">Chivas</span>
-<span class="prix">5€ / 8€</span>
+<span class="prix">5€ / 10€</span>
 </div>
 
 </div>
@@ -266,11 +365,22 @@ pamplemousse/pomme)</span>
 <span class="prix">3.50€</span>
 </div>
 
+<div class="boisson">
+<span class="nom">Diabolo</span>
+<span class="prix">3€</span>
+</div>
+
+
 <h3>Eaux</h3>
 
 <div class="boisson">
 <span class="nom">Plancöet Minérale ou Petillante(50cl/1L)</span>
 <span class="prix">3.50€/5€</span>
+</div>
+
+<div class="boisson">
+<span class="nom">Vittel</span>
+<span class="prix">3€</span>
 </div>
 
 </div>
@@ -296,7 +406,7 @@ pamplemousse/pomme)</span>
 
 <div class="boisson">
 <span class="nom">Thé / infusion</span>
-<span class="prix">2.50€</span>
+<span class="prix">3.50€</span>
 </div>
 
 </div>
@@ -371,5 +481,47 @@ pamplemousse/pomme)</span>
 
 </div>
 
+<!-- bouton retour en haut -->
+<button class="top-btn" onclick="scrollToTop()">↑</button>
+
+<!-- footer -->
+<div class="footer">
+
+<img src="footer.png" class="footer-bg">
+
+<div class="footer-content">
+
+<h2>Au Bout du Pont</h2>
+
+<div class="footer-line"></div>
+
+<p>Merci de votre visite</p>
+
+</div>
+
+</div>
+
+<script>
+
+// afficher bouton quand on scroll
+window.onscroll = function() {
+const btn = document.querySelector(".top-btn");
+
+if (document.documentElement.scrollTop > 200) {
+btn.style.display = "block";
+} else {
+btn.style.display = "none";
+}
+};
+
+// remonter en haut
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+</script>
 </body>
 </html>
